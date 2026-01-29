@@ -6,8 +6,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.post("/submit", (req, res) => {
-    console.log("form received", req.body); //debugery
     const {title, body} = req.body;
+    console.log("form received", req.body); //debugery
     res.send(req.body);
 });
 
