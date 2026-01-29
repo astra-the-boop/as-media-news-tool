@@ -5,11 +5,9 @@ const port = 3298;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.post("/submit", (req, res) => {
-    const {title, body} = req.body;
-    console.log("form received", req.body); //debugery
-    res.send(req.body);
-});
+const dataFile = path.join(__dirname, './data.json');
+
+
 
 app.listen(port, () => {
     console.log("server started on port", port);
