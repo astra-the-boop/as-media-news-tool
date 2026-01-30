@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Chomsky';
+    src: url("chomsky/Chomsky.otf") format("opentype");
+}
+
+#publisher{
+    font-family: 'Chomsky', cursive;
+    font-size: 2.5rem;
+    margin-top: 0.75rem;
+}
+
+#header1{
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: space-between;
+}
+
+#search{
+    height: 1rem;
+}
+
+body{
+    margin: 0;
+}
