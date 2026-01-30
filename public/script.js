@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
             document.getElementById("body").innerHTML = data.body;
             document.getElementById("date").innerHTML = data.date;
             document.getElementById("publisher").innerHTML = data.publisher;
+            document.title = data.title;
         }
     )
 });
