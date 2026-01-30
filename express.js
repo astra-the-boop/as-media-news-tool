@@ -18,13 +18,12 @@ function read(){
 }
 
 function write(data){
-    const {title,body} = req.body;
     fs.writeFileSync(dataFile,JSON.stringify(data, null, 2));
 }
 
-app.get("/submit", (req, res) => {
-    const {title, body} = req.body;
-    write({title, body});
+app.post("/submit", (req, res) => {
+    const {title, body, date, publisher} = req.body;
+    write({title, body, date, publisher});
     res.redirect("/page.html")
 })
 

@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function(){
         data => {
             document.getElementById("title").textContent = data.title;
             document.getElementById("body").innerHTML = data.body;
+            document.getElementById("date").innerHTML = data.date;
+            document.getElementById("publisher").innerHTML = data.publisher;
         }
     )
 });
