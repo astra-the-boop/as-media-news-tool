@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("title").value = data.title;
             document.getElementById("date").value = data.date;
             document.getElementById("body").value = data.body;
+            document.getElementById("location").value = data.location;
         }
     )
 })
