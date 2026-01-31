@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("/content").then(res => res.json()).then(
+    fetch("/as-media/content").then(res => res.json()).then(
         data => {
             document.getElementById("publisher").value = data.publisher;
             document.getElementById("writer").value = data.writer;
