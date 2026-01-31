@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Chomsky';
+    src: url("chomsky/Chomsky.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Orbiter';
+    src: url("TASA_Orbiter/static/TASAOrbiter-Bold.ttf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orbiter';
+    src: url("TASA_Orbiter/static/TASAOrbiter-Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Cormorant";
+    src: url("Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Cormorant";
+    src: url("Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+}
+
+body{
+    font-family: "Orbiter", sans-serif;
+    text-align: center;
+    background-color: #f2ebe2;
+}
+
+#publisher{
+    font-family: 'Chomsky', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#title{
+    font-family: "Orbiter", sans-serif;
+    font-size: 2rem;
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#subtext{
+    font-family: "Cormorant", serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #505050;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+#date{
+    margin-right: 0.5rem;
+}
+
+#writer{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#body{
+    width: 80%;
+    height: 20rem;
+    margin-bottom: 0.5rem;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #0c0c0c;
+    color: #F5F5F5;
+    font-family: "Orbiter", sans-serif;
+}
