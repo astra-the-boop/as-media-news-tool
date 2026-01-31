@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function(){
             document.getElementById("body").innerHTML = marked.parse(data.body);
             document.getElementById("date").innerHTML = Intl.DateTimeFormat("en-US", {year:"numeric", month:"long", day:"numeric"}).format(new Date(data.date));
             document.getElementById("publisher").innerHTML = data.publisher;
+            document.getElementById("subtext").innerHTML = data.subtext;
+            document.getElementById("writer").innerHTML = `${data.writer.toUpperCase()}`;
             document.title = data.title;
         }
     )

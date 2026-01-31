@@ -22,8 +22,8 @@ function write(data){
 }
 
 app.post("/submit", (req, res) => {
-    const {title, body, date, publisher} = req.body;
-    write({title, body, date, publisher});
+    const {title, body, date, publisher, writer, subtext} = req.body;
+    write({title, body, date, publisher, writer, subtext});
     res.redirect("/page.html")
 })
 

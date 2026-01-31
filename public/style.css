@@ -17,6 +17,18 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: "Cormorant";
+    src: url("Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Cormorant";
+    src: url("Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+}
+
 :root{
     --white: #F5F5F5;
 }
@@ -33,6 +45,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    border-bottom: 1px solid #0c0c0c;
+
 }
 
 #search svg{
@@ -65,7 +82,48 @@ body{
     font-size: 1.12rem;
 }
 
+#subtext{
+    font-style: italic;
+    font-family: "Cormorant", "sans-serif";
+    font-size: 1.7rem;
+    color: #404040;
+    margin: 0 1rem 2rem 0.5rem;
+}
+
 #date{
     font-size: 0.95rem !important;
     color: #404040
+}
+
+#aaa{
+    margin: 3rem auto 0 auto;
+    color: #707070;
+    /*font-weight: bold;*/
+}
+
+#title{
+    margin-top: 0.65rem;
+}
+
+hr{
+    border: 1px solid #a0a0a0;
+    margin: auto 3rem 2rem auto;
+}
+
+#writer{
+    color: #404040;
+}
+
+.writer{
+    font-size: 1rem !important;
+    margin-bottom: 0;
+}
+
+#date{
+    margin: 0.1rem auto auto 0.25rem;
+}
+
+#fucker{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
