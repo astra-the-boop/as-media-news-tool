@@ -43,8 +43,8 @@ app.get(`${BASE}/editor`, (req, res) => {
 });
 
 app.post(`${BASE}/submit`, (req, res) => {
-    const { title, body, date, publisher, writer, subtext, location } = req.body;
-    write({ title, body, date, publisher, writer, subtext, location });
+    const { title, body, date, publisher, writer, subtext, location, image, imgAlt } = req.body;
+    write({ title, body, date, publisher, writer, subtext, location, image, imgAlt });
     res.redirect(`${BASE}/page`);
 });
 

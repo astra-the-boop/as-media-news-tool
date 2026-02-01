@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("date").value = data.date;
             document.getElementById("body").value = data.body;
             document.getElementById("location").value = data.location;
+            document.getElementById("image").value = data.image;
+            document.getElementById("imgAlt").value = data.imgAlt;
         }
     )
+    document.getElementById("image").addEventListener("change", function() {
+        document.getElementById("imgPreview").innerHTML = `<img src='${document.getElementById("image").value}'  alt="${document.getElementById("imgAlt").value}"> `
+    });
+
+    document.getElementById("imgAlt").addEventListener("change", function() {
+        document.getElementById("imgPreview").innerHTML = `<img src='${document.getElementById("image").value}'  alt="${document.getElementById("imgAlt").value}"> `
+    });
 })

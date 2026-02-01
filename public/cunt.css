@@ -84,3 +84,8 @@ button{
     color: #F5F5F5;
     font-family: "Orbiter", sans-serif;
 }
+
+#imgAlt{
+    margin-bottom: 1rem;
+    width: 40%;
+}

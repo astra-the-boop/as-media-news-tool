@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function(){
             document.getElementById("writer").innerHTML = `${data.writer.toUpperCase()}`;
             document.title = data.title;
             document.getElementById("location").innerHTML = `${data.location.toUpperCase()} - `;
+            if(data.image){
+                document.getElementById("img-container").innerHTML = `<img id="image" src="${data.image}" alt="${data.imgAlt}"><p id="image-alt">${data.imgAlt}</p>`
+            }
         }
     )
 });
