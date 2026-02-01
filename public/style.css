@@ -139,3 +139,21 @@ hr{
     color: #707070;
     font-weight: bold;
 }
+
+#image{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+#image-alt {
+    margin-left: 2.5rem;
+    margin-bottom: 3rem;
+    color: #808080;
+    font-size: 0.6rem;
+    font-weight: bold;
+    font-family: Cormorant, serif;
+    /*font-style: italic;*/
+    margin-top: 0.75rem
+}
